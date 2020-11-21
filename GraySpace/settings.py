@@ -111,11 +111,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-CORS_ALLOWED_ORIGINS = [
-
-    "http://localhost:3000",
-
-]
+CORS_ORIGIN_WHITELIST = (
+    'localhost:3000',
+)
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
